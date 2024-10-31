@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destination</title>
+
+    <style>
+        h1{color:crimson;
+           text-shadow:2px 2px aqua;
+           font-size:50px;}
+        h2{color:black;
+           text-shadow:2px 2px yellow;
+           font-size:50px;}
+        p1{color:black;
+          width:700px;
+          font-size:20px;}
+
+          @keyframes imageSwap {
+    0% { background-image: url('images/img1.png'); }
+    50% { background-image: url('images/img2.png'); }
+    100% { background-image: url('images/img3.png'); }
+}
+
+.div-with-background {
+    width: 300px;
+    height: 200px;
+    animation: imageSwap 3s infinite;
+}
+.container {
+    width: 700px;
+    height: 500px;
+}
+
+            </style>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to explore the world</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+        <h2 style="text-align:center">Solara Bay!</h2>
+
+<section>
+    <div class="container">
+            <p1>
+            At (Solara Bay), we believe that travel enriches the soul and opens the door to new experiences. Our mission is to help you discover hidden gems, popular hotspots, and everything in between, so you can create unforgettable memories on your journeys.
+            <br>
+            Thank you for stopping by, and we hope you find the inspiration you need for your next getaway! If you have questions or need assistance, don’t hesitate to reach out. Happy exploring!
+        </p1>
+        <div class="div-with-background"></div>
+    </div>
+    <h2>Featured Destinations</h2>
+    <div class="carousel">
+        <img src="images/paris.png" alt="Destination 1">
+        <img src="images/newyok.png" alt="Destination 2">
+        <img src="images/tokyo.png" alt="Destination 3">
+    </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2024 Explore the World. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

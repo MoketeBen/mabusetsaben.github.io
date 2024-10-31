@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <style>
+
+
+       
+        h1{color:black;
+          font-size:40px;
+        text-shadow:4px 4px yellowgreen;}
+      
+        
+    
+.image-container {
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+}
+
+.animated-image {
+    position: absolute;
+    width: 150px;
+    animation: move 10s infinite linear;
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+/*fade*/
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+img {
+    animation: fade 3s infinite;
+}
+/*imageswap*/
+@keyframes imageSwap {
+    0% { background-image: url('images/image1.jpg'); }
+    50% { background-image: url('images/image2.jpg'); }
+    100% { background-image: url('images/image3.jpg'); }
+}
+
+.div-with-background {
+    width: 200px;
+    height: 200px;
+    animation: imageSwap 3s infinite;
+}
+/*spriteanimation*/
+@keyframes spriteAnimation {
+    0% { background-position: 0 0; }
+    25% { background-position: -100px 0; }
+    50% { background-position: -200px 0; }
+    75% { background-position: -300px 0; }
+    100% { background-position: -400px 0; }
+}
+
+.sprite {
+    width: 100px;
+    height: 100px;
+    background-image: url('sprite-sheet.png');
+    animation: spriteAnimation 1s steps(4) infinite;
+}
+/*parallax*/
+.parallax {
+    background-image: url("image.jpg");
+    height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+    </style>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Travel Destinations</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="destinations.html">Destinations</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destinations-grid">
+        <article>
+            <img src="images/paris3.png" alt="Paris">
+            <h3>PARIS</h3>
+            <p>The city of lights and romance. The city street was a melting pot of cultuers, languages, and flavours.
+              there are many expressive shops and malls together with tall buildings</p>
+            <a href="https://en.parisinfo.com/">Learn more</a>
+        </article>
+        <article>
+            <img src="images/newyok2.png" alt="New York">
+            <h3>NEW YORK</h3>
+            <p>New York City, often referred to as the "Big Apple," is a place like no other. It is a melting pot of cultures, a hub of innovation, and a city that never sleeps.
+                 From the bustling streets of Times Square to the serene beauty of Central Park, there is something for everyone in this vibrant metropolis.</p>
+            <a href="https://www.nycgo.com/">Learn more</a>
+        </article>
+        <article>
+            <img src="images/tokyo2.png" alt="Tokyo">
+            <h3>TOKYO</h3>
+            <p>Experience the vibrant city of Tokyo. It is very popular in the country as there is tendency for many cultures
+                to marge and to create new thing, the city was situated in the above oceans</p>
+            <a href="https://www.gotokyo.org/en/">Learn more</a>
+        </article>
+    </section>
+
+    <section>
+        <h2>Watch Travel Videos!</Video></h2>
+    <video width="400" controls>
+        <source src="New_York_City.mp4"type"video/mp4">
+        </video>
+
+        <video width="400" controls>
+            <source src="Paris_Vacation_Travel.mp4"type"video/mp4">
+            </video>
+
+            <video width="400" controls>
+                <source src="Tokyo_Vacation_Travel.mp4"type"video/mp4">
+                </video>
+                </section>
+    <footer>
+        <p>&copy; 2024 Explore the World. All Rights Reserved.</p>
+    </footer>
+    <div class="image-container">
+        <img src="Tower.png" alt="Moving Image" class="image-container">
+    </div>
+</body>
+</html>
